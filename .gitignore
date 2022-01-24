@@ -30,3 +30,16 @@
 *.exe
 *.out
 *.app
+
+
+*.user
+
+**/Debug/
+**/obj/
+**/bin/
+
+/.vs
+/ZM.Examples.Generated/CMakeFiles
+/ZM.Examples.Generated/CMakeCache.txt
+/ZM.Examples.Generated/cmake_install.cmake
+/ZM/Generator/*.cs

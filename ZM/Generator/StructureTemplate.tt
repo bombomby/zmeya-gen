@@ -1,0 +1,9 @@
+﻿<#@ template language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Reflection" #>
+struct <#= Context.CurrentNode.TargetType #> 
+{
+<# foreach (FieldInfo field in PublicFields) { #>
+	<#= GenerateFieldDeclaration(field) #>
+<# } #>
+};
